@@ -1,0 +1,452 @@
+﻿ECOR 1051 Lab 1 Solution Template 
+
+Author: Tawseef Patel
+
+This file is to be used in conjunction with the detailed lab description for Lab 1.
+Use this file to enter your answers to the series of exercises you will complete.
+
+=========================================================================================
+
+Part A : Exploring Data Types and Operators
+
+=========================================================================================
+
+Exercise 1: A first interaction with the Python shell
+
+>>> 1+2
+
+Result (the value that was displayed): 3
+
+===========
+Exercise 2: Experiment - Do spaces matter?
+
+>>> 1 + 2
+
+Result: 3
+
+>>> 1     +       2
+
+Result: 3
+
+
+Concluding question: What do you conclude about the significance of spaces in expressions? Does the number of
+spaces between the operands and operator affect the evaluation? 
+
+The number of spaces between operands and operators
+do not affect the evaluation process. 
+Therefore, spaces hold no major significance in expressions)
+
+===========
+Exercise 3: Using the built-in function called type(), explore different data types.
+
+>>> type(1)
+
+Result: <class 'int'>
+
+>>> type(2)
+
+Result: <class 'int'>
+
+>>> type(0)
+
+Result: <class 'int'>
+
+>>> type(-1)
+
+Result: <class 'int'>
+
+>>> type(255)
+
+Result: <class 'int'>
+
+>>> type(-256)
+
+Result: <class 'int'>
+
+Concluding question: What type were all of these sample numbers?  
+
+All of the sample numbers were <class 'int'> meaning they were integers. 
+===========
+Exercise 4: Explore arithmetic operations on integers (including negative integers).
+
+>>> 4 - 1
+
+Result: 3
+
+
+>>> 4 - 6
+
+Result: -2
+
+>>> 5 - -9
+
+Result: 12
+
+>>> -7 - -2
+
+Result: -5
+
+>>> 2 * 3
+
+Result: 6
+
+>>> 4 * -3
+
+Result: -12
+
+>>> -5 * -4
+
+Result: 20
+
+Concluding question: It appears that, for integer values, - is the subtraction 
+operator and * is the multiplication operator. What can you conclude about the 
+types of the values produced by these operations?
+
+the types of values produced by these operations are integer class numbers. 
+===========
+Exercise 5: Explore the arithmetic operation of division on integers
+
+>>> 6 / 2
+
+Result: 3.0
+
+>>> -6 / 2
+
+Result: -3.0
+
+>>> 6 / -2
+
+Result: -3.0
+
+>>> type(6 / -2)
+
+Result: <class 'float'>
+
+>>> 7 / 2
+
+Result: 3.5
+
+>>> type(7 / 2)
+
+Result: <class 'float'>
+
+>>> 10 / 3
+
+Result: 3.3333333333333335
+
+>>> type(10 / 3)
+
+Result: <class 'float'>
+
+Concluding Question: What is the type of the value produced when one integer is 
+divided by another. 
+
+ <class 'float'>
+===========
+Exercise 6: Explore compound arithmetic operations.
+
+>>> 1 + 2 + 3
+
+Result: 6
+
+>>> 5 - 1 - 1 - 1
+
+Result:2
+
+>>> 2 * 2 * 3
+
+Result: 12
+
+>>> 12 / 3 / 2
+
+Result: 2.0
+
+Concluding Question: Does Python support more complicated expressions made up of
+several operands and operators? 
+ yes by using BEDMAS
+===========
+Exercise 7: Explore operator precedence.
+
+>>> 1 + 2 * 3
+
+Result: 7
+
+>>> 2 * 3 + 1
+
+Result: 7
+
+Concluding Question: What do you conclude about the precedence of the * operator
+relative to the + operator?
+
+multiplication is higher in the order of precedence relative to addition
+
+===========
+Exercise 8: Explore operator precedence further, with parentheses.
+
+>>> (1 + 2) * 3
+
+Result: 9
+
+>>> 2 * (3 + 1)
+
+Result: 8
+
+Compare these results to the ones you obtained in Exercise 7.
+	
+there are parantheses in these equations
+
+Concluding Question: What do you conclude about the effect of parentheses on 
+operator precedence?
+
+parentheses have the highest order of precedence just as in BEDMAS or PEMDAS
+
+===========
+Exercise 9: This exercise is different.  Instead of exploring a question using a
+supplied list of shell commands as your experiment, you are going to design your
+own experiment to answer the question by yourself. In a way, you'll be writing
+your own first program independently!
+
+In mathematics, an expression involving multiplication can be written in two ways:
+       2 x (3 + 4)    where the x multiplication operator is EXPLICITLY used
+       2 (3 * 4)      where the x multiplication operator is IMPLICITLY assumed.
+  
+The question is: Does Python support "implicit multiplication"?
+
+You must design an experiment (a series of shell commands, as in other exercises)
+which prove the answer one way or the other.
+
+Record your experiment's shell commands here:
+
+>>>2(4+1)
+
+Result: <stdin>:1: SyntaxWarning: 'int' object is not callable; perhaps you missed a comma?
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'int' object is not callable
+
+>>>17+3(4)
+
+Result: <stdin>:1: SyntaxWarning: 'int' object is not callable; perhaps you missed a comma?
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'int' object is not callable
+
+Record your conclusion here: Does Python support implicit multiplication?
+
+Python does not support implicit multiplication, and has a TypeE50rror
+
+===========
+Exercise 10: Explore the Python's exponentiation operator **.
+   NOTE: For advanced students, do not use Python's pow() function. Not yet. 
+
+>>> 3 ** 2
+
+Result:9
+
+>>> -3 ** 2
+
+Result: -9
+
+Concluding question: Explain *WHY* the results of the second shell command is
+NOT the square of -3. Describe the order of operations performed by the computer.
+
+Parentheses were not used around the -3 and therefore caused the - to go outside of the 3
+-(3)**2
+
+Concluding question: Write a shell command that correctly calculates the square of -3? 
+You must use the ** operator. You must NOT use the pow() function.
+
+>>>(-3)**2
+
+Result: 9
+
+===========
+
+Exercise 11: More exploration of division in Python.  Exercise 5 introduced the / operator.
+In this exercise, you will use the // operator.
+
+>> 11 // 4
+
+Result: 2
+
+>> -11 // 4
+
+Result:-3
+
+>> 11 // -4
+
+Result:-3
+
+>> -11 // -4
+
+Result: 2
+
+Concluding Question: Explain the difference between the / operator and the // operator.
+In your explanation, include descriptions of what results are produced for different
+combinations of signs (positive/negative)
+
+the / symbol is exact division and provides the decimal values (remainder) and the // operator is
+rounded division and rounds to the nearest whole number (integer division)
+the reason the results produced are different if there is a - sign is because 
+
+===========
+
+Exercise 12: Exploring the Modulus Operator
+ TIP: Exercise 11 and 12 go together.  The sequence of commands is identical,
+except for a change in the operator.  
+
+>> 11 % 4
+
+Result:3
+
+>> -11 % 4
+
+Result:1
+
+>> 11 % -4
+
+Result:-1
+
+>> -11 % -4
+
+Result:-3
+
+Concluding Question: Explain the behaviour of the modulus operator. What value 
+does it return? In your explanation, include descriptions of what results are
+produced for different combinations of signs (positive/negative)
+
+The modulus operator gives the remainder from when you divide the two integers.When there
+is a negative sign on the divsor, the remainder also has the same sign. So when the divisor is negative,
+the output is also negative, and vise versa with the positive sign. 
+
+================================================================================
+
+Part B : Exploring Variables
+
+The remaining exercises must be done in Python Tutor (pythontutor.com).
+Python Tutor is a great tool for VISUALIZING the execution of code and to understand
+the use of memory by a computer program.  Use the default SETTINGS:
+  - Hide Exited Frames
+  - Inline Primitives and try to nest objects
+  - Draw Pointers as Arrows
+
+Note: Python Tutor is a tool for LEARNING.  Wing 101 is a tool for writing real
+programs. They are both great, but have different purposes and strengths.
+
+============
+
+Exercise 13:  To convert a temperature measured on the Celsius scale to the 
+equivalent Fahrenheit temperature, we multiply the Celsius temperature by 9/5, then add 32. 
+For example, 20.0 degrees Celsius is equivalent to 68.0 degrees Fahrenheit.
+
+In Python Tutor's editor window:
+1. Type one assignment statement that creates a new variable named degrees_c and binds it to 20.0. 
+2. Type one assignment statement that converts the temperature bound to degrees_c to the 
+equivalent temperature in degrees Fahrenheit. This temperature should be bound to a 
+new variable named degrees_f.
+
+Click the Visualize Execution button. Execute the code, one statement at a time. 
+Observe the memory diagram as the code is executed, step-by-step. Verify that
+your code produces a result of 68.0 degrees Farenheit.
+
+When does variable degrees_c appear in the diagram?
+
+step 2 (when the first command is executed)
+
+What is the name of the frame containing degrees_c ?
+
+global frame
+
+When does variable degrees_f appear in the diagram?
+
+step 3 (when the second command is executed)
+
+
+
+
+>>>degrees_c = 20
+>>>degrees_f = 9/5 * degrees_c + 32
+
+
+
+===========
+
+Exercise 14
+
+You're going to write Python statements that convert miles per gallon to litres per 100 km. 
+One Imperial gallon is equal to approximately 4.54609 litres. 
+One mile is equal to approximately 1.60934 km. 
+
+In Python Tutor's editor window:
+1. Type one assignment statement that creates a new variable named mpg and 
+binds it to the value 32 (which represents 32 miles per gallon).
+2. Type two assignment statements that create new constants named LITRES_PER_GALLON and 
+KMS_PER_MILE and binds them to the values 4.54609 and 1.60934, respectively. 
+(Note that the names of constant values in Python are, by convention, written in uppercase.)
+3. Type one assignment statement that converts the mileage bound to mpg to the equivalent fuel 
+consumption, measured in litres per 100 km. This value should be bound to a variable named 
+fuel_consumption.
+
+Click the Visualize Execution button. Execute the code, one statement at a time. 
+Observe the memory diagram as the code is executed, step-by-step. Verify that your code
+produces a result of 8.83 litres per 100 km.
+
+When do the variables appear in the diagram?
+
+step 2 is when they begin to appear, with the value of kms_per_mile then liters_per_gallon, and then mpg
+(when the second statement is executed that is when the variables being to appear.
+
+
+What are the types and values of the objects?
+
+mpg is an integer while the other variables are floats. 
+kms_per_mile = 1.60934
+liters_per_gallon = 4.54609
+mpg = 32
+
+
+===========
+
+Exercise 15: Consider these assignment statements:
+a = 9			# 1
+b = 4			# 2
+c = a * b		# 3
+d = b			# 4
+a = 2			# 5
+b = 3			# 6
+
+First, test your visualization skills by executing the given statements in your
+head, without using the Python shell or PyTutor to assist you.
+
+- Predict  the value that will be bound to c AFTER Line 4 is executed. 36
+- Predict the value that will be bound to d AFTER Line 6 is executed. 4
+
+Confirm your answers by entering these statements in Python tutor and executing
+the code one statement at a time.
+
+Concluding Question: This set of statements is an experiment. What question is
+the experiment trying to answer? (i.e. What is proven by this exercise?)
+
+the question this experiment is trying to solve is that does changing the value of an assigned
+variable after using it to solve an equation, change the value of the answer in the equation.
+The value for c always remains 36 as that the value for a and b remain 9 and 4 the original statement
+
+===========
+Exercise 16: Explore augmented operators. 
+
+In Python Tutor's editor window, enter the following and execute one statement
+at a time.
+
+x = 4
+x *= x - x
+
+Concluding Question: Write a short step-by-step explanation of how Python
+evaluates the second statment. 
+
+
+
+x is assigned to the value of 4
+the value of x is subtracted from x and then multiplied to yield an answer of x is assigned to 0
+
+
+Last edited: January 8, 2020

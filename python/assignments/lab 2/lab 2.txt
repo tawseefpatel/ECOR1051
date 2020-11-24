@@ -1,0 +1,148 @@
+ECOR 1051 Lab 2 Solution Template
+
+Author: Erase this text and enter your name here.
+
+This file is to be used in conjunction with the detailed lab description for Lab 2.
+Use this file to enter your answers to the series of exercises you will complete.
+
+==========
+Exercise 1 
+
+What is the name of the frame containing variable "area_of_disk"?
+
+	Global Frame
+
+What does variable "area_of_disk" refer to?
+
+	the variable refers to the area of a circular disk or circle defined by the formula
+	pi(r^2)
+
+What is the name of the frame containing parameter "radius"?
+
+	Local (call) Frame
+
+When does the frame appear in the memory diagram?
+
+	it appears after the math module is imported 
+
+What is the type and value of the variable "radius"? Where did that value come from?
+
+	the type radius is an undefined variable however it was given a value of 3 in the formulae. 
+
+How does PyTutor depict the value the function will return?
+
+	it depicts the return value by following the return statement after receiving the input value 
+	for the radius. 
+
+When does the frame containing "radius" disappear?
+
+	the radius frame disappears after the area print function has been executed 		
+
+What is the name of the frame containing the variable "area"? 
+
+	global frame
+
+When does "area" appear in the frame?
+
+	area appears in the frame after the print function is exceuted
+
+What is the type and value of "area"? Where did that value come from?
+
+	the type is float and has a value of 78.5398
+
+==========
+Exercise 2 
+
+What value does "area_of_disk" return each time it is called?
+
+	78.5398
+
+==========
+Exercise 3
+
+What is the name of the frame containing parameters "inner" and "outer"?
+
+	they are in the local (call) frame and are known as the arguments
+
+When does the frame appear in the memory diagram?
+
+	it appears after the area function is exceuted
+
+What are the types and values of the variables "inner" and "outer"? 
+
+	float with a value of 5.0 and 10.0 for inner and outer respectively. 
+
+What caused those values to be bound to "inner" and "outer"?
+
+	the last function call area = area_of_ring and the def area_of_ring (outer, inner)
+	bounded the values to the arguments. 
+
+What is the name of the frame containing parameter "radius"? 
+
+	local (call) frame
+	
+When does that frame appear in the memory diagram? How many times does it appear?
+
+	it appears when area_of_disk is defined and appears for 7 steps. 
+
+Each time the frame containing "radius" appears, what is the type and value bound to "radius"? 
+What caused that value to be bound to "radius"?
+
+	the value that appears is the value bounded by outer and inner (10.0 and 5.0 respectively) 
+	these values are flaots and are bounded to the argument radius because of the math module that was
+	imported
+
+When does the frame containing "radius" disappear?
+
+	it disappears after the area_of_disk is executed 
+
+When does the frame containing "inner" and "outer" disappear?
+
+	when the code is complete and the area function is executed 
+
+What is the name of the frame containing the variable "area"? 
+
+	global frame
+
+When does "area" appear in the frame?
+
+	at the very end when it is executed 
+
+What is the type and value of the variable "area"? What caused that
+value to be bound to "area"?
+
+	the value is 235.6194 and is a float. it is bounded by this value because the 
+	arguments that are placed in the area_of_ring function and because of its return value
+
+
+==========
+Exercise 4 
+
+What is the type and value of the object returned by the function when there is
+no return statement?
+
+	the return value is None and that is because the return function was not used in the 
+	definition function. 
+
+==========
+Exercise 5
+
+When "cube" is called, but before Python executes x = x ** 3, what value is
+bound to parameter "x"? What value is bound to variable "a"?
+
+	the value bound to x before x=x**3 is executed is a value of int 2. 
+	the value bound to variable a is also 2. 
+
+After Python executes x = x ** 3, but before the function returns, what value
+is bound to parameter "x"? What value is bound to variable "a"?
+
+	before the function is returned, x is bound to a value of 8 as this is the value of 
+	pow(2,3). the variable a is still bound toa value of 2
+
+In Python code, does assigning a value to a function's parameter change the 
+corresponding function argument?
+
+	yes assigning a value to a functions parameter changes to corresponding function argument	
+
+==========
+Last edited: 7 Jan. 2020

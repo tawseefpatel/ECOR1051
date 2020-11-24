@@ -1,0 +1,119 @@
+ECOR 1051 Lab 5 Solution Template
+
+Author: Tawseef Patel
+
+This file is to be used in conjunction with the detailed lab description for Lab 5
+Use this file to enter your answers to the series of exercises you will complete.
+
+==========
+
+Exercise 1: Single or Double Quotes - Does it matter?
+
+Example, "haven't" or '"Spam, spam, spam," he said.'
+
+>>> type('Hello')
+
+	<class 'str'>
+
+>>> type("goodbye")
+
+	<class 'str'>
+
+>>> 'This is a string'
+
+	'this is a string'
+
+>>> ""     (An empty string - type two quotes with no spaces between them.)
+
+	''
+
+>>> '"Spam, spam, spam," he said.'
+
+	'"Spam, spam, spam," he said.'
+
+>>> "I haven't a clue" 
+
+	"I haven't a clue"
+
+>>> 'I haven't a clue' 
+
+	Traceback (most recent call last):
+ 	 Python Shell, prompt 8, line 1
+	Syntax Error: invalid syntax: <string>, line 1, pos 10
+
+
+Concluding Questions: Generally, either double or single quotes works well but can you give a scenario where one is better than the other?
+
+	in the last experiment it returned a syntax error and that is the type of situation that a double quotation mark would 
+	make more sense because there is a word that has an aposterphe.
+
+==================
+
+Exercise 2: What operations are permitted with values of type str?
+
+When used with strings, + is the concatenation operator. 
+
+>>> 'Hello, ' + 'world!'
+
+	'hello, world!'
+
+When used with strings, * is the replication operator.
+
+>>> "Spam" * 3
+
+	'SpamSpamSpam'
+
+>>> 3 * "Spam"
+
+	'SpamSpamSpam'
+
+>>> "Spam" * 0
+
+	''
+
+>>> "Spam" * -3
+
+	''
+
+There are other operators to try now: - and /
+
+>>> "Hello" - "He"
+
+	Traceback (most recent call last):
+ 	 Python Shell, prompt 14, line 1
+	builtins.TypeError: unsupported operand type(s) for -: 'str' and 'str'
+
+>>> 'Spam' / 3
+
+	Traceback (most recent call last):
+  	 Python Shell, prompt 15, line 1
+	builtins.TypeError: unsupported operand type(s) for /: 'str' and 'int'
+
+
+Concluding Questions: What operators work with strings?  Does the order of operands matter?
+	
+	the multiplication(*) and the addition (+) operators work with strings. and the order of operands 
+	does not matter. 
+
+=======================
+
+Exercise 3 : Understand the string representation
+
+Is  the string '123' the same as the integer 123? 
+
+>>> '123' + 456
+
+	Traceback (most recent call last):
+ 	 Python Shell, prompt 16, line 1
+	builtins.TypeError: can only concatenate str (not "int") to str
+
+>>> '123' + '456'
+
+	'123456'
+
+Concluding Question: When a string looks like a number, is it a number or a string?
+
+	when as string looks like a number meaning '123' it is a <class 'str'>
+
+=========
+Last edited: January 20, 2020
