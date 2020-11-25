@@ -1,0 +1,9 @@
+How to read the differences picture:
+The left is the original, The right is the changed
+version. Green is added. Red is removed.
+
+Changes:
+1. Removed some unused imports
+2. Imported 'posterize_filter()' instead and removed
+ the copied version.
+3. Added "if __name__..."

@@ -1,9 +1,8 @@
-# Milestone 3
 # Team 65
 # Members:
 # -Amelia Hronowsky 101142991
 # -Quinn Parrott 101169535
-# -Ifeoluwa Shonibare 101164650
+# -Ifeoluwa Shonibare 101145333
 # -Tawseef Patel 101145333
 
 from Cimpl import Image, create_image, get_width, get_height,\
@@ -35,7 +34,7 @@ def green_channel(image: Image) -> Image:
     Returns image with a green filter applied by changing every red and
     blue RGB value to 0 in each pixel
 
-    Author: Ifeoluwa Shonibare 101164650
+    Author: Ifeoluwa Shonibare 101145333
 
     >>> green_image = green_channel(load_image(choose_file()))
     >>> show(green_image)
@@ -520,6 +519,7 @@ def detect_edges_better(image: Image, threshold: int = 3) -> Image:
 
         current = get_color(image, x, y)[0]
         right = get_color(image, x+1, y)[0]
+        print(f"C{current} r{right} {abs(current - right)} {threshold}")
 
         if abs(current - right) > threshold:
             set_color(edge_image, x, y, BLACK)

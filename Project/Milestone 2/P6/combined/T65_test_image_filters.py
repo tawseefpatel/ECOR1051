@@ -1,9 +1,8 @@
-# Milestone 3
 # Team 65
 # Members:
 # -Amelia Hronowsky 101142991
 # -Quinn Parrott 101169535
-# -Ifeoluwa Shonibare 101164650
+# -Ifeoluwa Shonibare 101145333
 # -Tawseef Patel 101145333
 
 from Cimpl import create_image, Color, create_color, set_color, get_color
@@ -406,7 +405,7 @@ def test_green_channel() -> None:
     Returns 'PASSED' if pixels from green_channel
     change the original pixels to the expected pixels
 
-    Author: Ifeoluwa Shonibare 101164650
+    Author: Ifeoluwa Shonibare 101145333
 
     >>> test_green_channel()
     """

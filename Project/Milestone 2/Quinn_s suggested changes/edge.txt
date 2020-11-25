@@ -1,0 +1,9 @@
+How to read the differences picture:
+The left is the original, The right is the changed
+version. Green is added. Red is removed.
+
+Changes:
+1. Used 'grayscale()' to instead of calculating it in
+ 'detect_edges()'. This cleans up lots of the variables.
+2. You might also that some values are signed to '_'. This
+ just ignores the value.

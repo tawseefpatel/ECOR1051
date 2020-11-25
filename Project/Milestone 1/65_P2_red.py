@@ -8,7 +8,8 @@ from Cimpl import choose_file, load_image, copy, create_color, set_color, show, 
 image1 = load_image("miss_sullivan.jpg")
 
 def red_channel(file: Image)-> Image:
-    """Returns the selected file with no G or B values. (Returns the file with only red pixels) """
+    """Returns the selected file with no G or B values. (Returns the file with only red pixels) 
+    """
     original_image = copy(file)
     for x, y, (r, g, b) in original_image:
         red_color = create_color(r, g-g, b-b)

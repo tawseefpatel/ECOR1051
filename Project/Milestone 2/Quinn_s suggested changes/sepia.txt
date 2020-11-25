@@ -1,0 +1,8 @@
+How to read the differences picture:
+The left is the original, The right is the changed
+version. Green is added. Red is removed.
+
+Changes:
+1. Merged the grayscaling into one line.
+2. I moved 'set_color()' outside the if else clauses
+ which removes some repeated code.

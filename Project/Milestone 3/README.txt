@@ -21,6 +21,8 @@ This project contains the files:
 - `Cimply.py`
 - `simple_Cimpl_filters.py`
 
+Contact Quinn Parrott (quinnparrott@cmail.carleton.ca) for more details.
+
 Installation:
 -------------
 Python 3 is required. This software has been tested with Python 3.7 and 3.8. A version of Pillow/PIL is required. Python's Standard Library is used.
@@ -58,4 +60,8 @@ More information at https://choosealicense.com/licenses/mit/.
 
 Credits:
 --------
+Ifeoluwa Shonibare - Edge Detect, Sepia and Interactive UI
+Amelia Hronowsky - Extreme Contrast and Horizontal Flip
+Tawseef Patel - 2/3 Toned, Vertical Flip and Batch UI
+Quinn Parrott - Better Edge Detect, Posterize and Refactoring of User Interface
 Don L. Bailey - Cimpl (Carleton Image Manipulation Python Library)
